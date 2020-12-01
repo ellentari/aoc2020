@@ -1,1 +1,1 @@
-# aoc2020
+Solutions for yet another [advent of code 2020](https://adventofcode.com/2020)
