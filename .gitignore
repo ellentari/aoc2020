@@ -1,2 +1,13 @@
 *.class
 *.log
+
+target/
+project/
+
+*.iml
+*.ipr
+*.iws
+.idea
+out
+
+.bsp
