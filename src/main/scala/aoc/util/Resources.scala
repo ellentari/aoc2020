@@ -8,6 +8,6 @@ object Resources {
     Source.fromResource(path).getLines().toList
 
   def string(path: String): String =
-    lines(path).mkString
+    lines(path).mkString("\n")
 
 }
