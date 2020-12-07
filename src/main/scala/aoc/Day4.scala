@@ -139,10 +139,10 @@ object Day4 extends App {
 
   private def parsePassportFields(s: String): Map[PassportField, String] =
     s.split("\\s+")
-      .flatMap(s => {
-        val Array(key, value) = s.split(":")
+      .flatMap {
+        case s"$key:$value" =>
         PassportField.fromStringOption(key).map(_ -> value)
-      })
+      }
       .toMap
 
   private val input = Resources.string("day4.txt").split("\n\n")
